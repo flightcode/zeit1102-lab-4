@@ -35,7 +35,8 @@ public class Cyclist {
     }
 
     public void resetRace() {
-
+        this.time = 0;
+        this.StageWins = 0;
     }
 
     public String toString() {
