@@ -5,7 +5,7 @@ public class Cyclist {
     int StageWins;
 
     public static void main(String[] args) {
-        Cyclist cyclst1 = new Cyclist("Thomas", "Ineos");
+        Cyclist cyclst1 = new Cyclist("Thomas", "Team Ineos");
         cyclst1.setName("Geraint " + cyclst1.getName());
         System.out.println(cyclst1.getName());
         System.out.println(cyclst1.getTeam());
