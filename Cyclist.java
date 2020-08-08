@@ -7,6 +7,8 @@ public class Cyclist {
     public Cyclist(String name, String team) {
         this.name = name;
         this.team = team;
+        this.time = 0;
+        this.StageWins = 0;
     }
 
     public void setName(String name) {
