@@ -11,10 +11,13 @@ public class TeamDriver {
         System.out.print("Enter the first cyclist team : ");
         String team = scan.nextLine();
         c1 = new Cyclist(name, team);
+    }
+
+    public void readCyclist2() {
         System.out.print("Enter the second cyclist name : ");
-        name = scan.nextLine();
+        String name = scan.nextLine();
         System.out.print("Enter the second cyclist team : ");
-        team = scan.nextLine();
+        String team = scan.nextLine();
         c2 = new Cyclist(name, team);
     }
 
@@ -56,6 +59,7 @@ public class TeamDriver {
 
     public void init() {
         readCyclist1();
+        readCyclist2();
         doMainLoop();
     }
 
