@@ -28,7 +28,7 @@ public class Cyclist {
     }
 
     public void recordStage(double time, boolean winStage) {
-        this.time = time;
+        this.time += time;
         if (winStage) {
             this.StageWins++;
         }
