@@ -4,6 +4,18 @@ public class Cyclist {
     double time;
     int StageWins;
 
+    public static void main(String[] args) {
+        Cyclist cyclst1 = new Cyclist("Thomas", "Ineos");
+        cyclst1.setName("Geraint " + cyclst1.getName());
+        System.out.println(cyclst1.getName());
+        System.out.println(cyclst1.getTeam());
+        cyclst1.recordStage(209.6, true);
+        cyclst1.recordStage(318.62, true);
+        System.out.println(cyclst1.getStageWins());
+        System.out.println(cyclst1.toString());
+        cyclst1.resetRace();
+    }
+
     public Cyclist(String name, String team) {
         this.name = name;
         this.team = team;
