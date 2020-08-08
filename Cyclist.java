@@ -34,6 +34,7 @@ public class Cyclist {
     }
 
     public String toString() {
-
+        return "Name: " + this.name + "; Team: " + this.team + "; Time: " + this.time + "; Stage Wins: "
+                + this.StageWins + ";";
     }
 }
