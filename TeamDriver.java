@@ -66,5 +66,12 @@ public class TeamDriver {
     public static void main(String[] args) {
         TeamDriver td = new TeamDriver();
         td.init();
+        if (td.c2.getStageWins() > td.c1.getStageWins()) {
+            System.out.println("WINNER! " + td.c2.toString());
+        } else if (td.c1.getStageWins() > td.c2.getStageWins()) {
+            System.out.println("WINNER! " + td.c1.toString());
+        } else {
+            System.out.println("That was a boring race...");
+        }
     }
 }
